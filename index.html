@@ -33,19 +33,19 @@
 
             <ul class="nav__list">
                <li class="nav__item">
-                  <a href="#home" class="nav__link">Home</a>
+                  <a href="#home" class="nav__link active-link">Home</a>
                </li>
 
                <li class="nav__item">
-                  <a href="#about" class="nav__link">About Me</a>
+                  <a href="#about" class="nav__link active-link">About Me</a>
                </li>
 
                <li class="nav__item">
-                  <a href="#projects" class="nav__link">Projects</a>
+                  <a href="#projects" class="nav__link active-link">Projects</a>
                </li>
 
                <li class="nav__item">
-                  <a href="#contact" class="nav__link">Contact Me</a>
+                  <a href="#contact" class="nav__link active-link">Contact Me</a>
                </li>
             </ul>
 
@@ -56,6 +56,9 @@
          </div>
 
          <div class="nav__buttons">
+            <!-- Theme button -->
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+
             <!-- Toggle button -->
             <div class="nav__toggle" id="nav-toggle">
                <i class="ri-menu-4-line"></i>
@@ -326,23 +329,131 @@
 
       <!--==================== CONTACT ====================-->
       <section class="contact section" id="contact">
+         <div class="contact__container grid">
+            <div class="contact__data">
+               <h2 class="section__title-2">
+                  <span>Contact Me.</span>
+               </h2>
 
+
+               <p class="contact__description-1">
+                  I will read all emails. Send me any message you want and I'll get back to you soon.
+               </p>
+
+               <p class="contact__description-2">
+                  I need your <b>Name</b> and <b>Email Address</b>, but you won't receive anything other than your
+                  reply.
+               </p>
+
+               <div class="geometric-box"></div>
+            </div>
+
+            <div class="contact__mail">
+               <h2 class="contact__title">
+                  Send me a message
+               </h2>
+
+               <form action="" class="contact__form" id="contact-form">
+                  <div class="contact__group">
+                     <div class="contact__box">
+                        <input type="text" name="user_name" class="contact__input" id="name" required
+                           placeholder="First Name">
+                        <label for="name" class="contact__label">First Name</label>
+                     </div>
+
+                     <div class="contact__box">
+                        <input type="email" name="user_email" class="contact__input" id="email" required
+                           placeholder="Email Address">
+                        <label for="email" class="contact__label">Email Address</label>
+                     </div>
+                  </div>
+
+                  <div class="contact__box">
+                     <input type="text" name="user_subject" class="contact__input" id="subject" required
+                        placeholder="Subject">
+                     <label for="subject" class="contact__label">Subject</label>
+                  </div>
+
+                  <div class="contact__box contact__area">
+                     <textarea name="user_message" id="message" class="contact__input" required
+                        placeholder="Message"></textarea>
+                     <label for="message" class="contact__label">Message</label>
+                  </div>
+
+                  <p class="contact__message" id="contact-message"></p>
+
+                  <button type="submit" class="contact__button button">
+                     <i class="ri-send-plane-line"></i> Send Message
+                  </button>
+               </form>
+            </div>
+
+            <div class="contact__social">
+               <img src="assets/img/curved-arrow.svg" alt="" class="contact__social-arrow">
+
+               <div class="contact__social-data">
+                  <div>
+                     <p class="contact__social-description-1">
+                        Do not send emails
+                     </p>
+
+                     <p class="contact__social-description-2">
+                        Write me on my social networks
+                     </p>
+                  </div>
+
+                  <div class="contact__social-links">
+                     <a href="https://www.linkedin.com/in/nishitmehta-/" target="_blank" class="contact__social-link">
+                        <i class="ri-linkedin-box-fill"></i>
+                     </a>
+
+                     <a href="https://twitter.com/nishitmehta_" target="_blank" class="contact__social-link">
+                        <i class="ri-twitter-fill"></i>
+                     </a>
+
+                     <a href="https://www.instagram.com/nishittmehta/" target="_blank" class="contact__social-link">
+                        <i class="ri-instagram-line"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
       </section>
    </main>
 
    <!--==================== FOOTER ====================-->
    <footer class="footer">
+      <div class="footer__container container grid">
+         <ul class="footer__links">
+            <li>
+               <a href="#about" class="footer__link">About</a>
+            </li>
 
+            <li>
+               <a href="#services" class="footer__link">Services</a>
+            </li>
+
+            <li>
+               <a href="#projects" class="footer__link">Projects</a>
+            </li>
+         </ul>
+
+         <span class="footer__copy">
+            &#169; 2023 All Rights Reserved By <a href="https://www.linkedin.com/in/nishitmehta-/">Nishit Mehta</a>
+         </span>
+      </div>
    </footer>
 
    <!--========== SCROLL UP ==========-->
-
+   <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-s-line"></i>
+   </a>
 
    <!--=============== SCROLLREVEAL ===============-->
    <script src=""></script>
 
    <!--=============== EMAIL JS ===============-->
-
+   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
    <!--=============== MAIN JS ===============-->
    <script src="assets/js/main.js"></script>
