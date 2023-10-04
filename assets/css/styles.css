@@ -1144,6 +1144,11 @@ body.dark-theme {
   .contact__data .section__title-2 {
     transform: translateX(0);
   }
+
+  .about__buttons {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 /* For medium devices */
