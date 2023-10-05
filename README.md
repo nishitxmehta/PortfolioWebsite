@@ -77,4 +77,20 @@ $ git push -u origin Branch_Name
 
 Terms and conditions for use, reproduction and distribution are under the [MIT License](https://opensource.org/license/mit/).
 
+## Contributors ✨
+
+Thanks goes to these wonderful people :
+
+<table>
+  <tr>
+     <td>
+  <a href="https://github.com/nishitxmehta/nishitmehta-portfolio/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=nishitxmehta/nishitmehta-portfolio" />
+  </a>
+    </td>
+  </tr>
+</table>
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
 <p align="right"><a href="#top">Back to top</a></p>
