@@ -684,7 +684,13 @@ body.dark-theme {
   align-items: center;
   column-gap: 1rem;
 }
-
+/* Media query for widths between 341px and 453px */
+@media screen and (min-width: 341px) and (max-width: 453px) {
+ .about__buttons{
+  flex-direction: column;
+  gap: 1em;
+ }
+}
 /*=============== SKILLS ===============*/
 
 .skills__container {
