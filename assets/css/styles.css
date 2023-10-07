@@ -691,6 +691,13 @@ body.dark-theme {
   gap: 1em;
  }
 }
+@media screen and (min-width: 576px) and (max-width: 1150px) {
+  .about__buttons .button {
+    white-space: nowrap;
+    /* display: inline-block; */
+  }
+}
+
 /*=============== SKILLS ===============*/
 
 .skills__container {
