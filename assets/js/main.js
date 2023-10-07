@@ -38,6 +38,26 @@ const shadowHeader = () => {
 }
 window.addEventListener('scroll', shadowHeader)
 
+/*==================== ACCORDION SKILLS ====================*/
+const skillsContent = document.getElementsByClassName('skills__content'),
+    skillsHeader = document.querySelectorAll('.skills__header')
+
+function toggleSkills() {
+    let itemsClass = this.parentNode.className
+
+    for (i = 0; i < skillsContent.length; i++) {
+        skillsContent[i].className = 'skills__content skills__close'
+    }
+
+    if (itemsClass === 'skills__content skills__close') {
+        this.parentNode.className = 'skills__content skills__open'
+    }
+}
+
+skillsHeader.forEach((el) => {
+    el.addEventListener('click', toggleSkills)
+})
+
 /*=============== EMAIL JS ===============*/
 const contactForm = document.getElementById('contact-form'),
     contactMessage = document.getElementById('contact-message')
