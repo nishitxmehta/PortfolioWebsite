@@ -475,17 +475,30 @@ body.dark-theme {
 }
 
 .home__social-link {
-  background-color: var(--black-color-light);
-  color: var(--white-color);
-  font-size: 1.25rem;
-  padding: 6px;
+  background-color: black;
+  color: white;
+  font-size: 5rem;
+  padding: 12px;
   display: grid;
   place-items: center;
   transition: background-color .3s;
 }
 
 .home__social-link:hover {
-  background-color: var(--black-color);
+  background-color: black;
+}
+
+#linkedin i.fa:hover {
+  color: rgb(0, 102, 194);
+}
+#twitter i.fa:hover {
+  color: rgb(29 161 242);
+}
+#github i.fa:hover {
+  color: red;
+}
+#instagram i.fa:hover {
+  color: rgb(214,41,118);
 }
 
 .home__info {
@@ -1154,7 +1167,7 @@ body.dark-theme {
 }
 
 .contact__social-link {
-  background-color: var(--black-color-light);
+  background-color: rgba(0, 0, 0, 0.478);
   padding: 6px;
   color: var(--white-color);
   font-size: 1.25rem;
@@ -1164,7 +1177,7 @@ body.dark-theme {
 }
 
 .contact__social-link:hover {
-  background-color: var(--first-color);
+  background-color: rgba(0, 0, 0, 0.478);
 }
 
 .contact__message {
