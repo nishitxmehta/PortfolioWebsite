@@ -38,26 +38,6 @@ const shadowHeader = () => {
 }
 window.addEventListener('scroll', shadowHeader)
 
-/*==================== ACCORDION SKILLS ====================*/
-const skillsContent = document.getElementsByClassName('skills__content'),
-    skillsHeader = document.querySelectorAll('.skills__header')
-
-function toggleSkills() {
-    let itemsClass = this.parentNode.className
-
-    for (i = 0; i < skillsContent.length; i++) {
-        skillsContent[i].className = 'skills__content skills__close'
-    }
-
-    if (itemsClass === 'skills__content skills__close') {
-        this.parentNode.className = 'skills__content skills__open'
-    }
-}
-
-skillsHeader.forEach((el) => {
-    el.addEventListener('click', toggleSkills)
-})
-
 /*=============== EMAIL JS ===============*/
 const contactForm = document.getElementById('contact-form'),
     contactMessage = document.getElementById('contact-message')
@@ -117,6 +97,46 @@ const scrollActive = () => {
 }
 window.addEventListener('scroll', scrollActive)
 
+/*==================== ACCORDION SKILLS ====================*/
+const skillsContent = document.getElementsByClassName('skills__content'),
+    skillsHeader = document.querySelectorAll('.skills__header')
+
+function toggleSkills() {
+    let itemsClass = this.parentNode.className
+
+    for (i = 0; i < skillsContent.length; i++) {
+        skillsContent[i].className = 'skills__content skills__close'
+    }
+
+    if (itemsClass === 'skills__content skills__close') {
+        this.parentNode.className = 'skills__content skills__open'
+    }
+}
+
+skillsHeader.forEach((el) => {
+    el.addEventListener('click', toggleSkills)
+})
+
+/*==================== QUALIFICATON TABS ====================*/
+const tabs = document.querySelectorAll('[data-target'),
+    tabContents = document.querySelectorAll('[data-content]')
+
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        const target = document.querySelector(tab.dataset.target)
+
+        tabContents.forEach(tabContents => {
+            tabContents.classList.remove('qualification__active')
+        })
+        target.classList.add('qualification__active')
+
+        tabs.forEach(tab => {
+            tab.classList.remove('qualification__active')
+        })
+        tab.classList.add('qualification__active')
+    })
+})
+
 /*=============== DARK LIGHT THEME ===============*/
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
@@ -156,6 +176,6 @@ const sr = ScrollReveal({
     //reset: true // Animations repeat
 })
 
-sr.reveal('.home__perfil, .about__image, .contact__mail', { origin: 'right' })
-sr.reveal('.home__name, .home__info, .about__container .section__title-1, .about__info, .contact__social, .contact__data', { origin: 'left' })
-sr.reveal('.services__card, .projects__card', { interval: 100 })
+sr.reveal('.home__perfil, .about__image, .contact__mail, .work', { origin: 'right' })
+sr.reveal('.home__name, .home__info, .about__container .section__title-1, .about__info, .contact__social, .contact__data, .skills__content, .education', { origin: 'left' })
+sr.reveal('.services__card, .projects__card, .qualification__sections', { interval: 100 })
