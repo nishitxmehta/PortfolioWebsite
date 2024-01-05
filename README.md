@@ -24,9 +24,9 @@
 ## Step 2: Fork the Project
 - Fork this Repository. This will create a Local Copy of this Repository on your Github Profile. Keep a reference to the original project in the `upstream` remote.
 ```
-$ git clone https://github.com/<your-username>/nishitmehta-portfolio.git
-$ cd nishitmehta-portfolio
-$ git remote add upstream https://github.com/nishitxmehta/nishitmehta-portfolio
+$ git clone https://github.com/<your-username>/PortfolioWebsite.git
+$ cd PortfolioWebsite
+$ git remote add upstream https://github.com/nishitxmehta/PortfolioWebsite
 ```
 
 - If you have already forked the project, update your copy before working.
@@ -49,7 +49,7 @@ $ git checkout -b branch_name
 - After you've made changes or made your contribution to the project add changes to the branch you've just created by:
 ```
 # To add all new files to branch Branch_Name
-$ git add.
+$ git add .
 ```
 
 ## Step 5: Commit
@@ -84,8 +84,8 @@ Thanks goes to these wonderful people :
 <table>
   <tr>
      <td>
-  <a href="https://github.com/nishitxmehta/nishitmehta-portfolio/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=nishitxmehta/nishitmehta-portfolio" />
+  <a href="https://github.com/nishitxmehta/PortfolioWebsite/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=nishitxmehta/PortfolioWebsite" />
   </a>
     </td>
   </tr>
